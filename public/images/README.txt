@@ -2,8 +2,9 @@ IMAGINI ART CUT STUDIO
 ======================
 
 • Hero (fundal prima pagină)
-  Pune aici imaginea pentru hero: hero.jpg (sau hero.png).
-  Calea în proiect: public/images/hero.jpg
+  - Desktop: hero.jpg → public/images/hero.jpg
+  - Telefon: hero-mobile.jpg → public/images/hero-mobile.jpg
+  (Dacă hero-mobile.jpg lipsește, pe telefon se folosește gradientul.)
 
 • Galerie
   Pune pozele pentru pagina Galerie în subfolder-ul gallery/.

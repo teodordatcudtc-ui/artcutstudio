@@ -25,19 +25,19 @@ export function Hero() {
         aria-hidden
       />
 
-      {/* Conținut centrat vertical, titlu pe 2 rânduri */}
-      <div className="relative z-20 flex-1 flex flex-col justify-center">
+      {/* Conținut centrat vertical și pe orizontală pe mobil, titlu mai mare pe telefon */}
+      <div className="relative z-20 flex-1 flex flex-col justify-center items-center sm:items-stretch text-center sm:text-left">
         <div className="mx-auto w-full max-w-[1400px] px-5 sm:px-8">
-          <div className="max-w-xl">
-            <h1 className="font-display text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-semibold text-white leading-tight tracking-tight animate-fade-in">
+          <div className="max-w-xl mx-auto sm:mx-0">
+            <h1 className="font-display text-[2.75rem] sm:text-4xl md:text-5xl lg:text-6xl font-semibold text-white leading-tight tracking-tight animate-fade-in">
               Arta tăieturii.
               <br />
               <span className="whitespace-nowrap"><span className="text-accent">Experiența</span> face diferența.</span>
             </h1>
-          <p className="mt-6 text-lg sm:text-xl text-white/85 max-w-md animate-slide-up" style={{ animationDelay: '0.15s' }}>
+          <p className="mt-6 text-lg sm:text-xl text-white/85 max-w-md mx-auto sm:mx-0 animate-slide-up" style={{ animationDelay: '0.15s' }}>
             Mai mult decât o frizerie – o destinație unde stilul și precizia se întâlnesc.
           </p>
-          <div className="mt-10 flex flex-wrap gap-4 animate-slide-up" style={{ animationDelay: '0.3s' }}>
+          <div className="mt-10 flex flex-wrap gap-4 justify-center sm:justify-start animate-slide-up" style={{ animationDelay: '0.3s' }}>
             <Link
               href="/contact"
               className="inline-flex items-center justify-center px-8 py-4 bg-accent text-dark font-semibold rounded-sm hover:bg-accent/90 transition-colors focus-ring"
