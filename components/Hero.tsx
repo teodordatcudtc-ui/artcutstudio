@@ -12,7 +12,8 @@ export function Hero() {
       <div className="absolute inset-0 bg-charcoal bg-hex-pattern bg-[length:80px_140px]" />
       <HeroImage />
       <div className="absolute inset-0 bg-gradient-to-br from-charcoal/90 via-dark/70 to-accent-blue/20 pointer-events-none" />
-      <div className="absolute inset-0 bg-gradient-to-r from-dark via-dark/85 to-transparent z-10 pointer-events-none" />
+      {/* Pe telefon fără gradient întunecat în stânga; pe desktop păstrăm */}
+      <div className="absolute inset-0 bg-gradient-to-r from-transparent via-transparent to-transparent sm:from-dark sm:via-dark/85 sm:to-transparent z-10 pointer-events-none" />
       <div className="absolute inset-0 bg-gradient-to-t from-dark via-transparent to-transparent z-10 pointer-events-none" />
 
       {/* Hexagon decorative – geometric motif from location */}
@@ -29,10 +30,10 @@ export function Hero() {
       <div className="relative z-20 flex-1 flex flex-col justify-center items-center sm:items-stretch text-center sm:text-left">
         <div className="mx-auto w-full max-w-[1400px] px-5 sm:px-8">
           <div className="max-w-xl mx-auto sm:mx-0">
-            <h1 className="font-display text-[2.75rem] sm:text-4xl md:text-5xl lg:text-6xl font-semibold text-white leading-tight tracking-tight animate-fade-in">
+            <h1 className="font-display text-[1.75rem] sm:text-4xl md:text-5xl lg:text-6xl font-semibold text-white leading-tight tracking-tight animate-fade-in">
               Arta tăieturii.
               <br />
-              <span className="whitespace-nowrap"><span className="text-accent">Experiența</span> face diferența.</span>
+              <span className="whitespace-normal sm:whitespace-nowrap"><span className="text-accent">Experiența</span> face diferența.</span>
             </h1>
           <p className="mt-6 text-lg sm:text-xl text-white/85 max-w-md mx-auto sm:mx-0 animate-slide-up" style={{ animationDelay: '0.15s' }}>
             Mai mult decât o frizerie – o destinație unde stilul și precizia se întâlnesc.
